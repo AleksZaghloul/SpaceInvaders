@@ -11,5 +11,5 @@ class LittleShip(Sprite):
         self.screen_rect = ai_game.screen.get_rect()
 
         #load ship image and get its rect
-        self.image = pygame.image.load('images\littleship.bmp')
+        self.image = pygame.image.load('images\littleship.png')
         self.rect = self.image.get_rect()

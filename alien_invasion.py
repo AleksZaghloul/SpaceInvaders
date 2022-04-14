@@ -232,6 +232,7 @@ class AlienInvasion:
 
         #make the most recently drawn screen visible.
         pygame.display.flip()
+        
 
 
 

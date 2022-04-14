@@ -2,6 +2,8 @@ import pygame.font
 from pygame.sprite import Group
 from ships_left import LittleShip
 
+
+
 class Scoreboard:
 
     def __init__(self, ai_game):

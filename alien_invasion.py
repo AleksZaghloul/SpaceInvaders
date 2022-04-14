@@ -90,7 +90,9 @@ class AlienInvasion:
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
         elif event.key == pygame.K_q:
+            self.stats.update_high_score_file()
             sys.exit()
+
         elif event.key ==pygame.K_SPACE:
             self._fire_bullet()
 
@@ -201,6 +203,7 @@ class AlienInvasion:
             self.ship.center_ship()
             sleep(1)
         else:
+            self.stats.update_high_score_file()
             self.stats.game_active = False
             pygame.mouse.set_visible(True)
     
